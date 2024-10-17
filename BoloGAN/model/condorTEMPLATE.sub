@@ -1,0 +1,16 @@
+universe                = vanilla
+executable              = @JOB@
+output                  = @OUTPUT_DIR@/@OUTPUT@
+log                     = @LOG_DIR@/@LOG@
+error                   = @ERROR_DIR@/@ERROR@
+request_memory          = @MEM@
++MaxRuntime             = @MAXRUNTIME@
+request_gpus            = 1 
+max_retries             = 1
+notification            = Always
+notify_user             = @USER@
+JobBatchName            = @TAG@
+WHEN_TO_TRANSFER_OUTPUT = ON_EXIT_OR_EVICT
++SpoolOnEvict           = False
+queue 1
+

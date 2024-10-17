@@ -1,0 +1,13 @@
+universe              = vanilla 
+executable            = @SCRIPT@ 
+output                = @OUTPUT@ 
+log                   = @LOG@ 
+error                 = @ERROR@
++MaxRuntime           = @MAXRUNTIME@ 
+requirements          = OpSysAndVer == "CentOS7"
+notification          = Complete 
+notify_user           = @MAIL@ 
+JobBatchName          = @TAG@
+queue 
+
+
